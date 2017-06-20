@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<nikado>
+    <blocks>
+	
+		<block>
+            <title>Contact us</title>
+            <identifier>contact_us</identifier>
+            <content>
+                    <![CDATA[
+						<div class="contact-us"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6305.678625317825!2d-122.39957047637722!3d37.793805380191266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858063d63a0215%3A0xcba0af2dfe02048f!2s101+California+Street%2C+San+Francisco%2C+CA+94111%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1419099932976" width="100%" height="350"></iframe></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Welcome</title>
+            <identifier>Welcome</identifier>
+            <content>
+                    <![CDATA[
+						<div class="link-contact">
+						<div class="phone">
+						<p>Welcome to our shop!</p>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Menu Links</title>
+            <identifier>pt_menu_links</identifier>
+            <content>
+                    <![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="{{store url="blog"}}">Blog</a></li>
+						<li><a href="{{store url="contact"}}">Contact Us</a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>hotline</title>
+            <identifier>hotline</identifier>
+            <content>
+                    <![CDATA[
+						<div class="box-haeder">
+						<div class="icon">
+						<div class="fa fa-phone"><span>phone-ring</span></div>
+						</div>
+						<div class="text">
+						<h1>(+080) 12345 6789</h1>
+						<p>Support Any Time</p>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static3 home</title>
+            <identifier>static3_home</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static3-home1">
+						<div class="box-col"><a href="{{store direct_url="women/collection.html"}}"><img src="{{media url="wysiwyg/img1-static3.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>logo footer</title>
+            <identifier>logo_footer</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static-logo"><a href="#"><img src="{{media url="wysiwyg/logo-footer.png"}}" alt="" /></a></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Static</title>
+            <identifier>footer_static</identifier>
+            <content>
+                    <![CDATA[
+						<div class="footer-static row">
+						<div class="col-sm-3 col-xs">
+						<div class="footer-static-title f-title1">
+						<h3>My Account</h3>
+						</div>
+						<div class="footer-static-content">
+						<ul>
+						<li class="first"><a href="{{store direct_url="customer/account/"}}">My Account</a></li>
+						<li><a href="{{store direct_url="customer/account/"}}">My Account</a></li>
+						<li><a href="#">Wish List</a></li>
+						<li class="last"><a href="#">Checkout</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="col-sm-3 col-xs">
+						<div class="footer-static-title f-title2">
+						<h3>Information</h3>
+						</div>
+						<div class="footer-static-content">
+						<ul>
+						<li class="first"><a href="{{store direct_url="customer/account/"}}">My Account</a></li>
+						<li><a href="{{store direct_url="sales/order/history/"}}">Order History</a></li>
+						<li><a href="{{store direct_url="contacts/"}}">Contact Us</a></li>
+						<li><a href="#">Delivery Inforamtion</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="col-sm-3 col-xs">
+						<div class="footer-static-title f-title3">
+						<h3>My Account</h3>
+						</div>
+						<div class="footer-static-content">
+						<ul>
+						<li class="first"><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>
+						<li><a href="#">Delivery Information</a></li>
+						<li><a href="#">Manufactureres </a></li>
+						<li class="last"><a href="#">Terms &amp; Condition</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="col-sm-3 col-xs">
+						<div class="footer-static-title f-title3">
+						<h3>Extras</h3>
+						</div>
+						<div class="footer-static-content">
+						<ul>
+						<li class="first"><a href="#">Brands</a></li>
+						<li><a href="#">Gift Vouchers</a></li>
+						<li><a href="#">Affiliates</a></li>
+						<li class="last"><a href="#">Specials</a></li>
+						</ul>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static2 footer</title>
+            <identifier>static2_footer</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static2-footer-conten">
+						<div class="box-home">
+						<div class="row">
+						<div class="col-md-4 col-sm-12 col-xs-12 box1">
+						<div class="iner-box">
+						<div class="icon"><i class="fa fa-phone"><span>phone</span></i>
+						<p>Do you have a question?</p>
+						</div>
+						<div class="text">
+						<h3>+0123 456 789</h3>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 box2 ">
+						<div class="iner-box">
+						<div class="icon"><i class="fa fa-envelope-o"><span>phone</span></i>
+						<p>offer<strong> question?</strong></p>
+						</div>
+						<div class="text">
+						<h3>Contact@nikado.com</h3>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 box3 ">
+						<div class="iner-box">
+						<div class="icon"><i class="fa fa-support"><span>phone</span></i>
+						<p>SUpport question?</p>
+						</div>
+						<div class="text">
+						<h3>support@nikado.com</h3>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>footer payment</title>
+            <identifier>footer_payment</identifier>
+            <content>
+                    <![CDATA[
+						<p class="img1"><img src="{{media url="wysiwyg/payment.png"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>banner left</title>
+            <identifier>banner_left</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-left">
+						<div class="box-col"><a href="{{store direct_url="mens/shops.html"}}"><img src="{{media url="wysiwyg/left-grid.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static1 home1 home3</title>
+            <identifier>static1_home1_home3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static1-home1">
+						<div class="row">
+						<div class="col-md-6 box1">
+						<div class="left">
+						<div class="box-col"><a href="{{store direct_url="women/weaters.html"}}"><img src="{{media url="wysiwyg/img1-static1-home1.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						<div class="col-md-6 box2 ">
+						<div class="right">
+						<div class="box-col box1"><a href="{{store direct_url="women/jackets.html"}}"><img src="{{media url="wysiwyg/img2-static1-home1.jpg"}}" alt="" /></a></div>
+						<div class="box-col box2"><a href="{{store direct_url="women/jackets.html"}}"><img src="{{media url="wysiwyg/img3-static1-home1.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static2 home1</title>
+            <identifier>static2_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static2-home1">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="box-iner bos1">
+						<div class="icon">
+						<div class="fa fa-truck"><span>truck</span></div>
+						</div>
+						<div class="text">
+						<h3>Free Shipping</h3>
+						<p>Free shipping on all orders over $100</p>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						<div class="box-iner bos2">
+						<div class="icon">
+						<div class="fa fa-diamond"><span>diamond</span></div>
+						</div>
+						<div class="text">
+						<h3>Money back</h3>
+						<p>100% money back guarantee</p>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						<div class="box-iner bos3">
+						<div class="icon">
+						<div class="fa fa-support"><span>support</span></div>
+						</div>
+						<div class="text">
+						<h3>Online Support</h3>
+						<p>Service support fast 24/7</p>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static categor1 home1</title>
+            <identifier>static_categor1_home1</identifier>
+            <content>
+                    <![CDATA[
+						{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Category" identify="category" category_id="8,9,10" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" template="categorytab/grid.phtml"}}
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static1 home2</title>
+            <identifier>static1_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static2-home1">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="box-iner bos1">
+						<div class="icon">
+						<div class="fa fa-truck"><span>truck</span></div>
+						</div>
+						<div class="text">
+						<h3>Free Shipping</h3>
+						<p>Free shipping on all orders over $100</p>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						<div class="box-iner bos2">
+						<div class="icon">
+						<div class="fa fa-diamond"><span>diamond</span></div>
+						</div>
+						<div class="text">
+						<h3>Money back</h3>
+						<p>100% money back guarantee</p>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						<div class="box-iner bos3">
+						<div class="icon">
+						<div class="fa fa-support"><span>support</span></div>
+						</div>
+						<div class="text">
+						<h3>Online Support</h3>
+						<p>Service support fast 24/7</p>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static2 home2</title>
+            <identifier>static2_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static2-home2">
+						<div class="box-top">
+						<div class="box-col"><a href="{{store direct_url="women/collection.html"}}"><img src="{{media url="wysiwyg/img1-home2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="box-bottom">
+						<div class="box-col"><a href="{{store direct_url="women/collection.html"}}"><img src="{{media url="wysiwyg/img2-home2.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static categor1 home2</title>
+            <identifier>static_categor1_home2</identifier>
+            <content>
+                    <![CDATA[
+						{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Category" identify="category" category_id="8,9,10" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" template="categorytab/grid.phtml"}}
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static3 home2</title>
+            <identifier>static3_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static3-home2">
+						<div class="row">
+						<div class="col-sm-5"><a href="#"><img src="{{media url="wysiwyg/sp-img.png"}}" alt="" /></a></div>
+						<div class="col-sm-7">
+						<div class="text">
+						<div class="box-price"><span>from</span>$69.000</div>
+						<h1><span>Men's</span>Bags</h1>
+						<a class="links" href="{{store direct_url="women/collection.html"}}">View Collection</a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static1 home3 home4</title>
+            <identifier>static1_home3_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static1-home3">
+						<div class="title">
+						<div class="iner-title">
+						<h1>Welcome to <span>Nikado</span> Store</h1>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						</div>
+						<div class="row">
+						<div class="col-md-4">
+						<div class="box-iner bos1">
+						<div class="icon">
+						<div class="fa fa-truck"><span>truck</span></div>
+						</div>
+						<div class="text">
+						<h3>Free Shipping</h3>
+						<p>Free shipping on all orders over $100</p>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						<div class="box-iner bos2">
+						<div class="icon">
+						<div class="fa fa-diamond"><span>diamond</span></div>
+						</div>
+						<div class="text">
+						<h3>Money back</h3>
+						<p>100% money back guarantee</p>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						<div class="box-iner bos3">
+						<div class="icon">
+						<div class="fa fa-support"><span>support</span></div>
+						</div>
+						<div class="text">
+						<h3>Online Support</h3>
+						<p>Service support fast 24/7</p>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static categor1 home3</title>
+            <identifier>static_categor1_home3</identifier>
+            <content>
+                    <![CDATA[
+						{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Category" identify="category" category_id="8,9,10" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" template="categorytab/grid.phtml"}}
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static2 home3 home4</title>
+            <identifier>static2_home3_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static1-home3-conten">
+						<div class="row">
+						<div class="col-md-4 col-sm-12 col-xs-12 box1">
+						<div class="box-col"><a href="{{store direct_url="women/collection.html"}}"><img src="{{media url="wysiwyg/img1-home3.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 box2 ">
+						<div class="box-col"><a href="{{store direct_url="women/collection.html"}}"><img src="{{media url="wysiwyg/img2-home3.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 box3 ">
+						<div class="box-col"><a href="{{store direct_url="women/collection.html"}}"><img src="{{media url="wysiwyg/img3-home3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static1 home4</title>
+            <identifier>static1_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static1-home4-conten">
+						<div class="row">
+						<div class="col-md-6 col-sm-12 col-xs-12 box1">
+						<div class="box-col"><a href="{{store direct_url="women/collection.html"}}"><img src="{{media url="wysiwyg/img1_home4.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-6 col-sm-12 col-xs-12 box2 ">
+						<div class="box-col"><a href="{{store direct_url="women/collection.html"}}"><img src="{{media url="wysiwyg/img2_home4.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static categor1 home4</title>
+            <identifier>static_categor1_home4</identifier>
+            <content>
+                    <![CDATA[
+						{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Category" identify="category" category_id="8,9,10" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" template="categorytab/grid.phtml"}}
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+		
+	</blocks>
+</nikado>

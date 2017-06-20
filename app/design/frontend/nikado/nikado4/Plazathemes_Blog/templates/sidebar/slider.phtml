@@ -1,0 +1,129 @@
+<?php
+/**
+ * Copyright © 2015 PlazaThemes.com. All rights reserved.
+
+ * @author PlazaThemes Team <contact@plazathemes.com>
+ */
+?>
+<?php
+/**
+ * Blog sidebar recent posts template
+ *
+ * @var $block \Plazathemes\Blog\Block\Sidebar\Recent
+ */
+?>
+
+<?php
+	$enable = $this->getConfig('enable_frontend');
+	$auto = $this->getConfig('auto');
+	$speed = $this->getConfig('speed');
+	$default = $this->getConfig('default');
+	$desktop = $this->getConfig('desktop');
+	$desktop_small = $this->getConfig('desktop_small');
+	$tablet = $this->getConfig('tablet');
+	$mobile = $this->getConfig('mobile');
+	$pagination = $this->getConfig('pagination');
+	$show_next_back = $this->getConfig('show_next_back');
+	$show_navigation_control = $this->getConfig('show_navigation_control');
+	$title = $this->getConfig('title');
+	if($show_next_back)
+		$show_next_back = 'true';
+	else
+		$show_next_back = 'false';
+	$show_navigation_control = $this->getConfig('show_navigation_control');
+	if($show_navigation_control)
+		$show_navigation_control = 'true';
+	else
+		$show_navigation_control = 'false';
+	$_postCollection = $block->getPostCollection();
+	$i = 0;
+?>
+<?php if ($_postCollection->count() && $enable) { ?>
+<div class="widget box-section block-recent-posts" data-bind="scope: 'recemt-posts'">
+
+		<h2 class="ma-title"><span> <?php echo __($title) ?></span></h2>
+		<div class="blog">
+			<div class="row">
+				<div class="ptowl">
+					<?php foreach ($_postCollection as $_post) { ?>
+						<div class="item">
+							<div class="item-inner">
+								<div class="blog-image">
+									<a class="image" href="<?php echo $_post->getPostUrl() ?>">
+										<img src="<?php echo $this->getMediaFolder().$_post->getThumbnailimage() ?>" alt="blog-image"/>
+									</a>
+										
+									
+								</div>
+								
+								<div class="blog-content">
+									<div class="text-time">
+										<div class="time-conment">
+											<?php 
+												$date = $_post->getPublishTime();
+											?>
+											<span class="date-time"><span class="date"><?php echo (date("d", strtotime($date))) ?></span><span class="separator"></span><span class="month"><?php echo (date("F", strtotime($date))) ?></span></span>
+										</div>
+										<div class="text-iner">	
+											<h3 class="title"><a href="<?php echo $_post->getPostUrl() ?>"><?php echo $block->escapeHtml($_post->getTitle()) ?></a></h3> 
+											<?php
+												$postby = $_post->getPostby();
+												if($postby):
+												?>
+													<p><span><?php echo __('Post by'); ?></span> : <?php echo $postby; ?></p>
+											<?php endif; ?>	
+											 
+											
+											<p class="short-des"><?php echo $_post->getShortContent() ?></p>
+											<div class="coment">
+											<!--<a class="readmore" href="<?php //echo $_post->getPostUrl() ?>">
+												<?php //echo __('Read more') ?><i class="icon-control-play icons"></i>
+											</a>-->
+											
+										</div>	
+										</div>
+											
+									</div>	
+									
+								</div>
+								
+							</div>
+						</div>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+
+</div>
+<script type="text/javascript">
+require([
+  "jquery",
+  "owlcarousel/minjs"
+ ], function($,owlCarousel){
+		$(document).ready(function(){
+			$(".block-recent-posts .ptowl").owlCarousel({
+				<?php
+					if(($auto== 'true') && $speed):
+				?>
+				autoPlay : <?php echo $speed; ?>,
+				<?php
+					endif;
+				?>
+				items : 1,
+				itemsDesktop : [1199,1],
+				itemsDesktopSmall : [992,1],
+				itemsTablet: [768,1],
+				itemsMobile : [479,1],
+				slideSpeed : <?php echo $pagination; ?>,
+				paginationSpeed : <?php echo $pagination; ?>,
+				rewindSpeed : <?php echo $pagination; ?>,
+				addClassActive: true,
+				navigation : <?php echo $show_next_back; ?>,
+				stopOnHover : true,
+				pagination : <?php echo $show_navigation_control; ?>,
+				scrollPerPage:true,
+			});
+		});
+	});
+</script>
+<?php } ?>

@@ -1,0 +1,113 @@
+<?php $block->renderFileLessToCss(); ?>
+<header class="header-container">
+	
+		<div class="top-bar">
+			<div class="container-inner">
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('Welcome')->toHtml();?>
+				<?php echo $this->getChildHtml("top.links"); ?>
+				<?php echo $this->getChildHtml("currency"); ?>
+				<?php echo $this->getChildHtml("store_language"); ?>
+				
+			</div>
+		</div>
+		<div class="conten-header">
+			<div class="container-inner">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="logo-home"><?php echo $this->getChildHtml("logo"); ?></div>	
+					</div>
+					<div class="col-md-7">	
+						<div class="search-switcher">
+							<?php echo $this->getChildHtml("top.search"); ?>	
+						</div>
+					</div>	
+					
+					<div class="col-md-2">
+						<div class="right">
+							<div class="card"><?php echo $this->getChildHtml("minicart");?></div>
+							<div class="wishlist-compare pull-right visible-lg visible-md">
+								<p class="wishlist-link"><a href ="<?php echo $this->helper('Magento\Wishlist\Helper\Data')->getListUrl() ?>"><i class="fa fa-heart-o"></i><?php echo __("Wishlist") ?></a></p>
+								
+							</div>
+							
+						</div>	
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="menu-conten">
+			<div class="container-inner">
+				<div class="nav-ozmegamenu-inner">
+					<?php echo $this->getChildHtml("hozmegamenu_top"); ?>
+				</div>
+				<div class="mobile-bar-icon"><span><?php /* @escapeNotVerified */ echo __('mobile icon'); ?></span></div>
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('hotline')->toHtml();?>
+			</div>
+			
+		</div>
+		
+		<div class="mobile-bar-content">
+			<div class ="mobile-bar-close"><?php /* @escapeNotVerified */ echo __('Close'); ?></div>
+			<ul class = "tabs-mobile">
+				<li class="item item-menu"><?php /* @escapeNotVerified */ echo __('Menu'); ?></li>
+				
+				<li class="item item-setting"><?php /* @escapeNotVerified */ echo __('Setting'); ?></li>
+			</ul>
+			<div class="tabs-content-mobile tabs-menu">
+				<?php echo $this->getChildHtml("mobilemenu"); ?>
+			</div>
+			<div class="tabs-content-mobile tabs-setting" style="display:none;">
+				<?php echo $this->getChildHtml("top.links"); ?>
+				<?php echo $this->getChildHtml("store_language_mobile"); ?>
+				<?php echo $this->getChildHtml("currency_mobile"); ?>
+			</div>
+		</div>
+
+</header>
+<script type="text/javascript">
+require(["jquery"], function($){
+	$(document).ready(function(){
+		<!-- show, hide mobile bar content -->
+		$(".mobile-bar-icon").click(function(){
+			$(".mobile-bar-content").addClass("open");
+		});
+		$(".mobile-bar-close").click(function(){
+			$(".mobile-bar-content").removeClass("open");
+		});
+		
+		<!-- choose tabs-->
+		$(".tabs-mobile .item-menu").addClass("active");
+		$(".tabs-mobile .item").click(function(){
+			$(".tabs-mobile .item").removeClass("active");
+			$(this).addClass("active");
+		});
+		$(".tabs-mobile .item-menu").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-menu").css("display","block");
+		});
+		$(".tabs-mobile .item-account").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-account").css("display","block");
+		});
+		$(".tabs-mobile .item-setting").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-setting").css("display","block");
+		});
+		
+	});
+	
+	$(window).scroll(function () {
+	   if ($(this).scrollTop() > 160) {
+		 $('.menu-conten').addClass("fix-nav-ozmegamenu");
+	   } else {
+		$('.menu-conten').removeClass("fix-nav-ozmegamenu");
+	   }
+	});
+	
+});
+</script>
+
+
+
